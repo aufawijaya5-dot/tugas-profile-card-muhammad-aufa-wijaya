@@ -1,0 +1,107 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url("https://images.unsplash.com/photo-1470770841072-f978cf4d019e");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+
+.card {
+    width: 340px;
+    padding: 30px 25px;
+    text-align: center;
+    color: white;
+
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.foto {
+    width: 95px;
+    height: 95px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 21px;
+    margin-bottom: 7px;
+}
+
+.pekerjaan {
+    font-size: 14px;
+    color: #e0e0e0;
+}
+
+.statistik {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.statistik div {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    font-size: 13px;
+}
+
+.statistik span {
+    color: #dedee5;
+}
+
+.tombol {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    flex: 1;
+    padding: 11px 5px;
+    border-radius: 5px;
+    border: 1px solid white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#followBtn {
+    background: white;
+    color: #222;
+}
+
+.message {
+    background: transparent;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 400px) {
+    .card {
+        width: 90%;
+    }
+}
